@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none ;
+  text-decoration: none;
   list-style: none;
   border: none;
   outline: none;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Variaveis no CSS */
+/* Variáveis no CSS */
 
-:root{
+:root {
   --color-primary: #481852;
   --color-primary-varient: #685487;
   --color-white: #fff;
@@ -22,7 +22,7 @@
   --transition: 0.4s ease;
 }
 
-body{
+body {
   background-color: var(--color-white);
   color: var(--color-black);
 }
@@ -40,7 +40,7 @@ h3 {
   color: var(--color-primary);
 }
 
-p{
+p {
   color: var(--color-dark);
   line-height: 150%;
   font-size: 19px;
@@ -51,7 +51,7 @@ img {
   display: block;
 }
 
-.btn{
+.btn {
   display: inline-block;
   width: fit-content;
   padding: 14px 32px;
@@ -64,48 +64,50 @@ img {
   color: var(--color-white);
 }
 
-.btn-hover{
+.btn-hover {
   background-color: var(--color-primary-varient);
   box-shadow: none;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
   max-width: 1420px;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.logo{
+.logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-black);
 }
 
-.logo span{
+.logo span {
   color: var(--color-dark);
 }
 
-.nav-links{
+.nav-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
 }
 
-.nav-links a{
+.nav-links a {
   font-size: 19px;
   color: var(--color-dark);
   position: relative;
   transition: var(--transition);
 }
 
-.nav-links li a::before{
+.nav-links li a::before {
   content: '';
   width: 0;
   height: 3px;
@@ -116,24 +118,24 @@ img {
   left: 0;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
   color: var(--color-black);
 }
 
-.nav-links li a:hover::before{
+.nav-links li a:hover::before {
   width: 100%;
   transition: var(--transition);
 }
 
-.active{
+.active {
   color: var(--color-black) !important;
 }
 
-.active::before{
+.active::before {
   width: 100% !important;
 }
 
-header{
+header {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -142,29 +144,29 @@ header{
   overflow: hidden;
 }
 
-.header-container{
-  display: grid;
-  grid-template-columns: auto 30rem;
-  gap: 4rem;
+.header-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
-.header-container h3{
+.header-container h3 {
   margin: 0.7rem 0;
   color: var(--color-primary);
 }
 
-.header-container p{
+.header-container p {
   margin: 0 0 1.8rem;
 }
 
-.header-right{
+.header-right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.circle{
+.circle {
   height: 28rem;
   width: 28rem;
   border-radius: 50%;
@@ -174,12 +176,12 @@ header{
 }
 
 @keyframes Animate {
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
 
-.circle a{
+.circle a {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -194,32 +196,32 @@ header{
   transition: var(--transition);
 }
 
-.circle a:hover{
+.circle a:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
 
-.circle a:nth-child(1){
+.circle a:nth-child(1) {
   left: calc(50% - 2rem);
   top: -2rem;
 }
 
-.circle a:nth-child(2){
+.circle a:nth-child(2) {
   top: calc(50% - 2rem);
   right: -2rem;
 }
 
-.circle a:nth-child(3){
+.circle a:nth-child(3) {
   top: calc(50% - 2rem);
   left: -2rem;
 }
 
-.circle a:nth-child(4){
+.circle a:nth-child(4) {
   left: calc(50% - 2rem);
   bottom: -2rem;
 }
 
-.hero-image{
+.hero-image {
   position: absolute;
   height: 23rem;
   width: 23rem;
@@ -244,4 +246,9 @@ header{
   .header-container {
     flex-direction: row;
   }
+
+  .nav-container {
+    flex-direction: row;
+  }
 }
+
