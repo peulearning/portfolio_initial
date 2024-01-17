@@ -11,12 +11,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Variaveis no CSS */
+
 :root{
-  --color-primary: #26d8;
-  --color-primary-varient: #08db;
+  --color-primary: #481852;
+  --color-primary-varient: #685487;
   --color-white: #fff;
   --color-black: #21272f;
-  --color-dark: #88949b;
+  --color-dark: #522222;
   --transition: 0.4s ease;
 }
 
